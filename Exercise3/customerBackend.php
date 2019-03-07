@@ -30,7 +30,7 @@
   $total = 19.99*$rabbits + 9.99*$sandwiches + 4.99*$dogs + shipping($ship);
 
   echo "<p>Username: ".$user."</p>";
-  echo "<p>Password: ".$pass."</p>";
+  echo "<p>Password: ".$password."</p>";
 
   echo "<tr>";
   echo  "<th></th>";
