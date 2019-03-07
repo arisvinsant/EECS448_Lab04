@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> Customer Selection </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script type ="text/javascript" src = "formChecker.js"></script>
+    </head>
+
+    <body>
+      <center>
+    <h1> Aris' Magic Store</h1>
+    <h2>
+      <i>Buy All of My Stuff</i>
+    </h2>
+    <form onsubmit="return choice()" action="customerBackend.php" method="post">
+
+      <br>
+      <br>
+      <img src = "rabbit.jpg" height="250">
+      <h3>Magical Rabbit</h3>
+      <p><i>$19.99 each</i></p>
+      Quantity:<input type="text" value = "" name="rabbits" id = "rabbit"><br><br>
+
+      <br>
+      <img src = "wand.jpg" height = "250">
+      <h3>Magic Wand</h3>
+      <p><i>$9.99 each</i></p>
+      Enter Quantity:<input type="text" value = "" name="wands" id = "wand"><br><br>
+
+      <img src = "handkerchief.jpg" height = "250"><br>
+      <i>*Not Actual Size</i>
+      <h3>Handkerchief</h3>
+      <p><i>$4.99 each</i></p>
+      Enter Quantity:<input type="text" value = "" name="handkerchiefs" id = "handekrchief"><br><br>
+
+      <h2>Shipping</h2>
+      <input type="radio" name="shipping" value="7day" checked> Free 7 day<br>
+      <input type="radio" name="shipping" value="overnight"> $50.00 over night<br>
+      <input type="radio" name="shipping" value="3day"> $5 three day<br>
+
+      <h2>User Info</h2>
+      Email:<input type="text" value = "" name="user" id = "user"><br><br>
+      Password:<input type="text" value = "" name="password" id = "password"><br><br>
+
+      <input type = "submit" value = "Submit"><br>
+      <br>
+      <input type="button" value = "Reset" onclick="location.href='https://people.eecs.ku.edu/~a941v383/EECS448_Lab04/Exercise3/customerFrontend.html'">
+    </form>
+    </center>
+    </body>
