@@ -1,12 +1,22 @@
 <?php
-//Inside myfirstprogram.php
-function sum($x, $y) {
-    $z = $x + $y;
-    return $z;
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+echo multiply();
+
+function multiply() {
+    echo "<table>";
+
+    for ($x = 1; $x < 101; $x++) {
+        echo "<tr> ";
+
+        for ($y = 1; $y < 101; $y++) {
+            echo "<td> ";
+            echo $x * $y;
+            echo "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
 }
-
-echo "5 + 10 = <b>" . sum(5, 10) . "</b><br>";
-echo "7 + 13 = <b>" . sum(7, 13) . "</b><br>";
-echo "2 + 4 = <b>" . sum(2, 4) . "</b>";
-
 ?>
